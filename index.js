@@ -9,7 +9,7 @@ app.get("/about-us", (req, res) => {
   let data = {
     memberName: "Anhelina",
     textDescription: "vbjhbk",
-    image: "/images/photo.png",
+    image: "/images/photo.webp",
     githubLink: "https://github.com/AnhelinaLytovchenko",
   };
   res.render("about-us", data);

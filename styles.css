@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font: "Noto Sans", sans-serif;
+  --bg-color: #1a1b22;
+  --main-color: #ffffff;
+  --secondary-color: #58a6ff;
+  --accent-pink: #fe5cd5;
+  --container-bg: #413b7a;
+  --box-shadow: rgba(0, 0, 0, 0.3);
+  --social-bg: #21262d;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font);
+  font-size: 16px;
+  color: var(--main-color);
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  height: 100%;
+  background: url("./images/background-image.png") center / cover no-repeat;
+  z-index: -1;
+  transform: translateY(-50%);
+  opacity: 0.85;
+}
+
+body::before {
+  left: 0;
+}
+
+body::after {
+  right: 0;
+  transform: translateY(-50%) scaleX(-1);
+}
+
+.about-us__hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  padding: 40px;
+  background-color: var(--container-bg);
+  border-radius: 16px;
+  box-shadow: 0 4px 10px var(--box-shadow);
+}
+
+.about-us__info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
+}
+
+.about-us__title {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.about-us__title span {
+  color: var(--secondary-color);
+}
+
+.about-us__title span:hover {
+  color: var(--accent-pink);
+}
+
+.about-us__description {
+  font-size: 16px;
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+.about-us__description a:hover {
+  text-decoration: underline;
+}
+
+.about-us__social-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.about-us__social-buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--social-bg);
+  transition: 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.about-us__social-buttons a:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+.about-us__social-buttons svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--main-color);
+}
+
+.about-us__avatar {
+  width: 200px;
+  height: auto;
+  border-radius: 16px;
+}
