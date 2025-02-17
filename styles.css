@@ -17,10 +17,6 @@
   --social-bg: #21262d;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   font-family: var(--font);
   font-size: 16px;
@@ -31,6 +27,13 @@ body {
   align-items: center;
   position: relative;
   min-height: 100vh;
+  max-width: 100vw;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body::before,
@@ -69,10 +72,10 @@ body::after {
 .about-us__info {
   display: flex;
   flex-direction: column;
-  margin-right: 25px;
 }
 
 .about-us__title {
+  margin-right: 25px;
   font-size: 28px;
   font-weight: bold;
   color: var(--main-color);

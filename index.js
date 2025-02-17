@@ -1,18 +1,45 @@
 const express = require("express");
-
 const app = express();
-app.use(express.static(__dirname));
+const path = require("path");
 
+app.use(express.static(__dirname));
 app.set("view engine", "ejs");
 
-app.get("/about-us", (req, res) => {
-  let data = {
+// Тимчасові дані про учасників (пізніше можна замінити на JSON)
+const members = {
+  daria: {
+    memberName: "Daria",
+    textDescription: "UI/UX Designer",
+    image: "/images/daria.webp",
+    githubLink: "https://github.com/cherrryblazerrr",
+  },
+  elina: {
+    memberName: "Elina",
+    textDescription: "Backend Developer",
+    image: "/images/elina.webp",
+    githubLink: "",
+  },
+  anhelina: {
     memberName: "Anhelina",
-    textDescription: "vbjhbk",
-    image: "/images/photo.webp",
+    textDescription: "Frontend Developer",
+    image: "/images/anhelina.webp",
     githubLink: "https://github.com/AnhelinaLytovchenko",
-  };
-  res.render("about-us", data);
+  },
+};
+
+app.get("/", (req, res) => {
+  res.render("index", { members });
+});
+
+app.get("/about-us/:member", (req, res) => {
+  const memberKey = req.params.member.toLowerCase();
+  const memberData = members[memberKey];
+
+  if (memberData) {
+    res.render("about-us", memberData);
+  } else {
+    res.status(404).send("Member not found");
+  }
 });
 
 const PORT = 3000;
