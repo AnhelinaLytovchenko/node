@@ -99,13 +99,13 @@ body::after {
   text-decoration: underline;
 }
 
-.about-us__social-buttons {
+.about-us__buttons {
   display: flex;
   gap: 12px;
   margin-top: 16px;
 }
 
-.about-us__social-buttons a {
+.about-us__buttons a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,12 +117,12 @@ body::after {
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.about-us__social-buttons a:hover {
+.about-us__buttons a:hover {
   background-color: var(--secondary-color);
   transform: translateY(-3px);
 }
 
-.about-us__social-buttons svg {
+.about-us__buttons svg {
   width: 24px;
   height: 24px;
   fill: var(--main-color);
