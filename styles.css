@@ -95,10 +95,6 @@ body::after {
   line-height: 1.5;
 }
 
-.about-us__description a:hover {
-  text-decoration: underline;
-}
-
 .about-us__buttons {
   display: flex;
   gap: 12px;
@@ -129,7 +125,7 @@ body::after {
 }
 
 .about-us__avatar {
-  width: 200px;
-  height: auto;
+  width: auto;
+  height: 200px;
   border-radius: 16px;
 }
