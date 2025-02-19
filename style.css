@@ -19,11 +19,11 @@ body {
 
 .left-sidebar{
   background: linear-gradient(rgba(65, 59, 122, 0.25), rgba(65, 59, 122, 0.85)),
-  url(img/bg_left_side.jpg) center / cover no-repeat;
+  url(images/bg_left_side.jpg) center / cover no-repeat;
 }
 .right-sidebar{
   background: linear-gradient(rgba(65, 59, 122, 0.25), rgba(65, 59, 122, 0.85)),
-  url(img/bg_right_side.jpg) center / cover no-repeat;
+  url(images/bg_right_side.jpg) center / cover no-repeat;
 }
 
 .main {
