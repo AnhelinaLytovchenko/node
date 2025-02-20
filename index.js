@@ -13,6 +13,7 @@ const members = {
     image: "/images/daria.webp",
     githubLink: "https://github.com/cherrryblazerrr",
     profileLink: "/about-us/daria",
+    linkedinLink: "www.linkedin.com/in/дар-я-наушенко-191221351",
   },
   elina: {
     memberName: "Elina",
