@@ -112,6 +112,7 @@ body::after {
 
 .name {
   font-size: 3vh;
+  font-weight: 700;
   padding: 1.5vh;
   color: var(--name-color);
   background-color: var(--name-background);
