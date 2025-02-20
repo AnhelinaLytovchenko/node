@@ -12,18 +12,21 @@ const members = {
     textDescription: "UI/UX Designer",
     image: "/images/daria.webp",
     githubLink: "https://github.com/cherrryblazerrr",
+    profileLink: "/about-us/daria",
   },
   elina: {
     memberName: "Elina",
     textDescription: "Backend Developer",
     image: "/images/elina.webp",
     githubLink: "",
+    profileLink: "/about-us/elina",
   },
   anhelina: {
     memberName: "Anhelina",
     textDescription: "Frontend Developer",
     image: "/images/anhelina.webp",
     githubLink: "https://github.com/AnhelinaLytovchenko",
+    profileLink: "/about-us/anhelina",
   },
 };
 
