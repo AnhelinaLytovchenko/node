@@ -203,7 +203,7 @@ body::after {
 }
 
 .about-us__avatar {
-  width: 200px;
-  height: auto;
+  width: auto;
+  height: 200px;
   border-radius: 16px;
 }
