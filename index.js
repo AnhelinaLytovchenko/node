@@ -9,11 +9,11 @@ app.set("view engine", "ejs");
 const members = {
   daria: {
     memberName: "Daria",
-    textDescription: "UI/UX Designer",
+    textDescription: "UI/UX Designer. Now I work as a math tutor and prepare pupils for exams. I also like to spend my free time actively, something like kayaking or ice-skating.",
     image: "/images/daria.webp",
     githubLink: "https://github.com/cherrryblazerrr",
     profileLink: "/about-us/daria",
-    linkedinLink: "www.linkedin.com/in/дар-я-наушенко-191221351",
+    linkedinLink: "https://www.linkedin.com/in/darianaush",
   },
   elina: {
     memberName: "Elina",
