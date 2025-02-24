@@ -9,8 +9,10 @@ app.set("view engine", "ejs");
 const members = {
   daria: {
     memberName: "Daria",
-    textDescription: "UI/UX Designer. Now I work as a math tutor and prepare pupils for exams. I also like to spend my free time actively, something like kayaking or ice-skating.",
+    textDescription:
+      "UI/UX Designer. Now I work as a math tutor and prepare pupils for exams. I also like to spend my free time actively, something like kayaking or ice-skating.",
     image: "/images/daria.webp",
+    linkedinLink: "https://www.linkedin.com/in/darianaush",
     githubLink: "https://github.com/cherrryblazerrr",
     profileLink: "/about-us/daria",
     linkedinLink: "https://www.linkedin.com/in/darianaush",
@@ -19,13 +21,16 @@ const members = {
     memberName: "Elina",
     textDescription: "Backend Developer",
     image: "/images/elina.webp",
-    githubLink: "",
+    linkedinLink: "",
+    githubLink: "https://github.com/EliaBar",
     profileLink: "/about-us/elina",
   },
   anhelina: {
     memberName: "Anhelina",
-    textDescription: "Frontend Developer",
+    textDescription:
+      "Frontend Developer. I'm exploring the world of web technologies and constantly learning new things. In my free time, I enjoy outdoor adventures, cooking delicious food, and discovering new hobbies!",
     image: "/images/anhelina.webp",
+    linkedinLink: "https://www.linkedin.com/in/anhelinalytovchenko",
     githubLink: "https://github.com/AnhelinaLytovchenko",
     profileLink: "/about-us/anhelina",
   },
