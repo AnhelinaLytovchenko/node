@@ -1,11 +1,10 @@
-const express = require("express"); // Підключення модуля
+const express = require("express");
 const app = express();
 const path = require("path");
 
 app.use(express.static(__dirname));
 app.set("view engine", "ejs");
 
-// Тимчасові дані про учасників (пізніше можна замінити на JSON)
 const members = {
   daria: {
     memberName: "Daria",
@@ -19,7 +18,8 @@ const members = {
   },
   elina: {
     memberName: "Elina",
-    textDescription: "Backend Developer",
+    textDescription:
+      "Backend Developer. I like working with databases and connecting them to the frontend.",
     image: "/images/elina.webp",
     linkedinLink: "",
     githubLink: "https://github.com/EliaBar",
